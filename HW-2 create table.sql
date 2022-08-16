@@ -1,13 +1,7 @@
-create table if not exists style
-(
-	id serial primary key,
-	name varchar(100) not null
-);
  create table if not exists artists
 (
 	id serial primary key,
-	name varchar(100) not null,
-	id_genre integer references style(id)
+	name varchar(100) not null
 );
  create table if not exists album
 (
