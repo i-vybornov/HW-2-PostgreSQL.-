@@ -1,7 +1,8 @@
  create table if not exists artists
 (
 	id serial primary key,
-	name varchar(100) not null
+	name varchar(100) not null,
+	nickname varchar (100)
 );
  create table if not exists album
 (
